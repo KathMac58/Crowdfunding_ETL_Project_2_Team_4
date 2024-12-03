@@ -8,24 +8,24 @@ Sam Smith
 Deidre Lebron  
 Fran Ruiz  
 
-#Extracting the Data  
+# Extracting the Data  
 After importing the necessary libraries defined in the ipynb, we extracted the data from the crowdfunding.xls with a plan to create 4 dataframes before creating an ERD and SQL database.
 
-#Creating 4 DataFrames:  
+# Creating 4 DataFrames:  
 
-#1. Category DF  
+# 1. Category DF  
 Extract and transform the crowdfunding.xlsx Excel data to create a category DataFrame that has the following columns:  
 • A "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories  
 • A "category" column that contains only the category title  
 • Export the category DataFrame as category.csv and save it to your GitHub repository.  
 
-#2. Sub-Category DF  
+# 2. Sub-Category DF  
 Extract and transform the crowdfunding.xlsx Excel data to create a subcategory DataFrame that has the following columns:  
 • A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories  
 • A "subcategory" column that contains only the subcategory titles  
 • Export the category DataFrame as subcategory.csv and save it to your GitHub repository.  
 
-#3. Campaign DF  
+# 3. Campaign DF  
 Extract and transform the crowdfunding.xlsx Excel data to create a campaign DataFrame has the following columns:  
 • The "cf_id" column  
 • The "contact_id" column  
@@ -43,7 +43,7 @@ Extract and transform the crowdfunding.xlsx Excel data to create a campaign Data
 • The "subcategory_id" column, with the unique identification numbers matching those in the "subcategory_id" column of the subcategory DataFrame  
 • Export the category DataFrame as campaign.csv and save it to your GitHub repository.  
 
-#4. Contacts DF  
+# 4. Contacts DF  
 Team 4 chose to solve the problem both ways:  
 • Option 1: Use Python dictionary methods.  
 • Option 2: Use regular expressions.  
@@ -66,7 +66,7 @@ We followed the following steps for Option 2 and captured multiple ways of solvi
 • Split each "name" column value into a first and a last name, and place each in a new column.  
 • Clean and then export the DataFrame as contacts.csv and save it to your GitHub repository.  
 
-#Creating the Crowdfunding Database  
+# Creating the Crowdfunding Database  
 • Inspect the four CSV files, and then sketch an ERD of the tables by using QuickDBDLinks to an external site.    
 • Use the information from the ERD to create a table schema for each CSV file.  
 Note: Remember to specify the data types, primary keys, foreign keys, and other constraints.   
