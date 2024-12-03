@@ -1,7 +1,7 @@
 ﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
-
+drop table if exists "contacts";
 CREATE TABLE "contacts" (
     "contact_id" int   NOT NULL,
     "first_name" varchar(15)   NOT NULL,
@@ -12,6 +12,7 @@ CREATE TABLE "contacts" (
      )
 );
 
+drop table if exists "category";
 CREATE TABLE "category" (
     "category_id" char(4)   NOT NULL,
     "category" varchar(15)   NOT NULL,
@@ -20,6 +21,7 @@ CREATE TABLE "category" (
      )
 );
 
+drop table if exists "subcategory";
 CREATE TABLE "subcategory" (
     "subcategory_id" char(8)   NOT NULL,
     "subcategory" varchar(20)   NOT NULL,
@@ -28,6 +30,7 @@ CREATE TABLE "subcategory" (
      )
 );
 
+drop table if exists "campaign";
 CREATE TABLE "campaign" (
     "cf_id" int   NOT NULL,
     "contact_id" int   NOT NULL,
